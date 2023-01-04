@@ -15,11 +15,11 @@ export class DbService {
     this.knex = Knex(knexConfig);
     Model.knex(this.knex);
 
-    if (config.db.logQueries) {
+    /*if (config.db.logQueries) {
     this.knex.on("query", queryData => {
       this.logger.debug(this.fillBindings(queryData.sql, queryData.bindings));
     });
-    }
+    }*/
   }
 
   async testConnection() {

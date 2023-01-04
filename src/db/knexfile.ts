@@ -34,7 +34,7 @@ class CustomMigrationSource {
 
 export const knexConfig = {
   client: "pg",
-  connection: config.db.url,
+  connection: "",
   migrations: {
     tableName: "migrations",
     migrationSource: new CustomMigrationSource(),

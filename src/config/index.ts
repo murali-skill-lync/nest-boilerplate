@@ -11,7 +11,7 @@ interface Config {
   env: string;
   port: number;
   apiKey: string;
-  db: Db;
+  //db: Db;
   swagger: Swagger;
   rateLimit: RateLimit;
   cors: Cors;
@@ -19,10 +19,10 @@ interface Config {
   logging: Logging;
 }
 
-interface Db {
+/*interface Db {
   url: string;
   logQueries: boolean;
-}
+}*/
 
 interface Swagger {
   enabled: boolean;
